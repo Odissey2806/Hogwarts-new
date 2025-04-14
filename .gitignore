@@ -1,37 +1,68 @@
-HELP.md
-.gradle
-build/
-!gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
-
-### IntelliJ IDEA ###
-.idea
-*.iws
+# IntelliJ IDEA files
+.idea/
 *.iml
 *.ipr
+*.iws
 out/
-!**/src/main/**/out/
-!**/src/test/**/out/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+# Gradle files
+.gradle/
+build/
 
-### VS Code ###
+# Log files
+*.log
+logs/
+
+# Dependency directories
+**/target/
+**/bin/
+
+# Mac OS
+.DS_Store
+
+# Environment files
+.env
+*.env
+
+# Spring Boot
+**/application.properties
+**/application.yml
+!src/main/resources/application.properties
+!src/main/resources/application.yml
+
+# Maven (если вдруг используется)
+**/target/
+**/pom.xml.asc
+**/mvnw
+**/mvnw.cmd
+**/.mvn/
+
+# Eclipse
+.settings/
+.project
+.classpath
+.factorypath
+
+# VSCode
 .vscode/
+
+# Temp files
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+*.orig
+
+# Other
+**/.classpath
+**/.project
+**/.settings/
+**/.springBeans
+**/dependency-reduced-pom.xml
+**/dump.rdb
+
+# Ignore all files in src/test/resources except the ones you want to keep
+src/test/resources/**
+!src/test/resources/**/
+!src/test/resources/*.*
