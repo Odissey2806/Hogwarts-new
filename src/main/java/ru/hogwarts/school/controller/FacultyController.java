@@ -49,3 +49,4 @@ public class FacultyController {
         return facultyService.filterFaculties(color, founder);
     }
 }
+
